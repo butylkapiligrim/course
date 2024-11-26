@@ -25,3 +25,4 @@ def test_vacancy_init(vacancies) -> None:
     assert vacancies.url == "https://api.hh.ru/areas/88"
     assert vacancies.salary == 300000
     assert vacancies.description == "ДА"
+

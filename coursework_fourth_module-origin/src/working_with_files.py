@@ -7,6 +7,7 @@ class BaseData(ABC):
     Абстрактный класс для класса WorkingWithData.
     """
 
+
     @abstractmethod
     def read_json(self):
         pass
@@ -60,3 +61,4 @@ class WorkingWithData(BaseData):
 
         with open(self.filepath, "w", encoding="utf-8") as file:
             json.dump(new_data, file, indent=4, ensure_ascii=False)
+
